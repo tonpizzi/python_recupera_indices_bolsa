@@ -1,0 +1,16 @@
+2025-06-03 20:55:33,654 - INFO - Iniciando processo
+2025-06-03 20:55:33,659 - INFO - Executando etapa de inicialização
+2025-06-03 20:55:33,669 - INFO - Fila carregada com 3 itens
+2025-06-03 20:55:33,669 - INFO - Iniciando automação de maiores altas da bolsa...
+2025-06-03 20:55:34,269 - INFO - 100 ações recuperadas com sucesso.
+2025-06-03 20:55:34,292 - INFO - Processando item ID 1: valor = a
+2025-06-03 20:55:34,293 - INFO - Item ID 1 processado com sucesso
+2025-06-03 20:55:34,320 - INFO - Processando item ID 2: valor = b
+2025-06-03 20:55:35,323 - INFO - Processando item ID 2: valor = b
+2025-06-03 20:55:36,327 - INFO - Processando item ID 2: valor = b
+2025-06-03 20:55:36,327 - ERROR - Item 2 falhou após 1 tentativa(s): RetryError[<Future at 0x1db71dcf560 state=finished raised Exception>]
+2025-06-03 20:55:36,328 - INFO - Processando item ID 3: valor = c
+2025-06-03 20:55:36,329 - INFO - Item ID 3 processado com sucesso
+2025-06-03 20:55:36,341 - INFO - Executando limpeza e finalização
+2025-06-03 20:55:36,342 - INFO - Execução finalizada. Verifique os logs e o status da fila.
+2025-06-03 20:55:36,343 - INFO - Processo finalizado

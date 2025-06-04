@@ -16,7 +16,7 @@ def main():
         logger.info("Iniciando automação de maiores altas da bolsa...")
         top_gainers = get_top_gainers()
         for stock in top_gainers:
-            print(f"{stock['ticker']} - {stock['name']}: {stock['price']} ({stock['change_percent']})")
+            print(f"{stock['ticker']};{stock['name']};{stock['price']};({stock['change_percent']})")
 
         process.run(init_data, logger)
         state = "End"

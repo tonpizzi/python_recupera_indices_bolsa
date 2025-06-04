@@ -3,8 +3,8 @@ import requests
 from bs4 import BeautifulSoup
 from framework.logger import setup_logger
 
-def get_top_gainers():
-    url = "https://br.tradingview.com/markets/stocks-brazil/market-movers-gainers/"
+def get_top_gainers(url_base, num_linhas):
+    url = url_base
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
     }
@@ -22,7 +22,7 @@ def get_top_gainers():
 
         rows = table.find('tbody').find_all('tr')
         top_gainers = []
-        for row in rows:
+        for row in rows[:num_linhas]:
             columns = row.find_all('td')
             if len(columns) >= 5:
                 ticker = columns[0].get_text(strip=True)

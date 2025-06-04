@@ -12,9 +12,10 @@ def main():
         logger.info("Iniciando processo")
         init_data = init.run(logger)
         state = "Process"
-
         logger.info("Iniciando automação de maiores altas da bolsa...")
-        top_gainers = get_top_gainers()
+        url_base = init_data["settings"]["url_indices"]
+
+        top_gainers = get_top_gainers(url_base, 10)
         for stock in top_gainers:
             print(f"{stock['ticker']};{stock['name']};{stock['price']};({stock['change_percent']})")
 

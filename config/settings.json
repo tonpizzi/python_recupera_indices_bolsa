@@ -1,5 +1,6 @@
 {
-  "app_name": "ReFramework Python",
-  "version": "2.0",
-  "retry_count": 3
+  "app_name": "Recupera_Indices_Bolsa",
+  "version": "1.0",
+  "retry_count": 3,
+  "url_indices": "https://br.tradingview.com/markets/stocks-brazil/market-movers-gainers/"
 }
